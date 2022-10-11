@@ -1,0 +1,24 @@
+Description: fix 2 test failures by running without TEST_VERBOSE
+ Fixed as a patch and not in d/rules so it can propagate into autopkgtest, too
+Author: Florian Schlichting <fsfs@debian.org>
+Bug: https://rt.cpan.org/Public/Bug/Display.html?id=114112
+
+--- a/t/skip2.t
++++ b/t/skip2.t
+@@ -2,6 +2,7 @@
+ 
+ use strict;
+ use warnings;
++$ENV{TEST_VERBOSE}=0;
+ 
+ # Override exit before Test::Class is loaded so the real override
+ # will be seen later.
+--- a/t/teardown-when-test-dies.t
++++ b/t/teardown-when-test-dies.t
+@@ -1,5 +1,6 @@
+ use strict;
+ use warnings;
++$ENV{TEST_VERBOSE}=0;
+ 
+ my $line;
+ {

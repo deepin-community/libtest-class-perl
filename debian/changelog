@@ -1,0 +1,408 @@
+libtest-class-perl (0.52-1) unstable; urgency=medium
+
+  [ gregor herrmann ]
+  * debian/copyright: change Copyright-Format 1.0 URL to HTTPS.
+  * debian/upstream/metadata: change GitHub/CPAN URL(s) to HTTPS.
+  * Remove Jay Bonci from Uploaders. Thanks for your work!
+  * Remove Jonathan Yu from Uploaders. Thanks for your work!
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-* headers for switch to salsa.debian.org
+
+  [ Debian Janitor ]
+  * Trim trailing whitespace.
+  * Bump debhelper from old 9 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Repository, Repository-
+    Browse.
+  * Remove obsolete fields Contact, Name from debian/upstream/metadata
+    (already present in machine-readable debian/copyright).
+
+  [ gregor herrmann ]
+  * debian/watch: use uscan version 4.
+  * Import upstream version 0.52.
+  * Update debian/upstream/metadata.
+  * Refresh test_non_verbose.patch.
+  * Update years of packaging copyright.
+  * Update Upstream-Contact in debian/copyright.
+  * Declare compliance with Debian Policy 4.5.1.
+  * Set Rules-Requires-Root: no.
+  * Annotate test-only build dependencies with <!nocheck>.
+  * Bump debhelper-compat to 13.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 20 Feb 2021 18:46:28 +0100
+
+libtest-class-perl (0.50-1.1) unstable; urgency=medium
+
+  * Non maintainer upload by the Reproducible Builds team.
+  * No source change upload to rebuild on buildd with .buildinfo files.
+
+ -- Holger Levsen <holger@debian.org>  Tue, 29 Dec 2020 01:54:44 +0100
+
+libtest-class-perl (0.50-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ gregor herrmann ]
+  * Add debian/upstream/metadata.
+  * Import upstream version 0.50.
+  * Update years of packaging copyright.
+  * Update (build) dependencies.
+  * Mark package as autopkgtest-able.
+  * Bump debhelper compatibility level to 9.
+  * Update Upstream-Contact in debian/copyright.
+
+  [ Salvatore Bonaccorso ]
+  * debian/control: Use HTTPS transport protocol for Vcs-Git URI
+
+  [ Florian Schlichting ]
+  * Run two tests without TEST_VERBOSE to avoid failures, see RT#114112
+  * Declare compliance with Debian Policy 3.9.8
+
+ -- Florian Schlichting <fsfs@debian.org>  Sun, 01 May 2016 21:35:07 +0200
+
+libtest-class-perl (0.47-1) unstable; urgency=medium
+
+  [ Salvatore Bonaccorso ]
+  * Imported Upstream version 0.46
+  * Update Vcs-Browser URL to cgit web frontend
+
+  [ gregor herrmann ]
+  * debian/control: update {versioned,alternative} (build) dependencies.
+
+  [ Salvatore Bonaccorso ]
+  * Imported Upstream version 0.47
+  * Declare compliance with Debian Policy 3.9.6
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Sat, 27 Sep 2014 15:23:24 +0200
+
+libtest-class-perl (0.45-1) unstable; urgency=medium
+
+  * Imported Upstream version 0.45
+  * Add alternative Build-Depends-Indep for Test::More requirements.
+    Add laternative Build-Depends-Indep on libtest-simple-perl (>= 1.001002)
+    or perl (>= 5.19.6) for the testsuite.
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Sun, 06 Jul 2014 07:45:47 +0200
+
+libtest-class-perl (0.44-1) unstable; urgency=medium
+
+  * Imported Upstream version 0.44
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Sat, 05 Jul 2014 07:51:18 +0200
+
+libtest-class-perl (0.43-1) unstable; urgency=medium
+
+  * Imported Upstream version 0.43
+  * Update versioned Build-Depends for Module::Build.
+    Update alternative Build-Depends for Module::Build to
+    libmodule-build-perl (>= 0.420400) | perl (>= 5.19.8).
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Thu, 26 Jun 2014 17:56:48 +0200
+
+libtest-class-perl (0.42-1) unstable; urgency=medium
+
+  [ gregor herrmann ]
+  * Strip trailing slash from metacpan URLs.
+
+  [ Salvatore Bonaccorso ]
+  * Imported Upstream version 0.42
+  * Update copyright years for debian/* packaging files
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Fri, 09 May 2014 12:51:14 +0200
+
+libtest-class-perl (0.41-1) unstable; urgency=medium
+
+  * Imported Upstream version 0.41
+  * Bump versioned build dependency for Module::Build.
+    Built requires at least Module::Build 0.42. Update the Build-Depends to
+    an alternative dependency on libmodule-build-perl (>= 0.420200) or
+    perl (>= 5.19.6)
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Sat, 14 Dec 2013 08:41:56 +0100
+
+libtest-class-perl (0.40-1) unstable; urgency=low
+
+  * Imported Upstream version 0.40
+  * Bump Standards-Version to 3.9.5
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Fri, 22 Nov 2013 07:22:54 +0100
+
+libtest-class-perl (0.39-1) unstable; urgency=low
+
+  * Imported Upstream version 0.38 and 0.39
+  * Bump Standards-Version to 3.9.4
+  * Change Vcs-Git to canonical URI (git://anonscm.debian.org)
+  * Change search.cpan.org based URIs to metacpan.org based URIs
+  * Update copyright years for debian/* packaging files
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Fri, 17 May 2013 13:21:34 +0200
+
+libtest-class-perl (0.37-1) unstable; urgency=low
+
+  [ Salvatore Bonaccorso ]
+  * Email change: Salvatore Bonaccorso -> carnil@debian.org
+
+  [ Ansgar Burchardt ]
+  * Email change: Ansgar Burchardt -> ansgar@debian.org
+  * debian/control: Convert Vcs-* fields to Git.
+
+  [ gregor herrmann ]
+  * New upstream release.
+  * debian/copyright: update to Copyright-Format 1.0.
+  * debian/copyright: update years of packaging copyright and license
+    stanzas.
+  * Bump Standards-Version to 3.9.3 (no changes).
+  * Set debhelper compatibility level to 8.
+  * Build-Depend on Module::Build 0.38.
+  * Update versioned (build) dependencies after the lenny archival.
+
+ -- gregor herrmann <gregoa@debian.org>  Wed, 27 Jun 2012 19:36:52 +0200
+
+libtest-class-perl (0.36-1) unstable; urgency=low
+
+  * New upstream release
+  * Refresh debian/copyright and refer explicitly to GPL-1 license text
+    in common-licenses.
+  * Make versioned (Build-)Depends(-Indep) on libtest-exception-perl
+    unversioned as already satisfied in stable and oldstable is gone.
+  * Bump Standards-Version to 3.9.1.
+
+ -- Salvatore Bonaccorso <salvatore.bonaccorso@gmail.com>  Fri, 20 Aug 2010 14:33:56 +0200
+
+libtest-class-perl (0.35-1) unstable; urgency=low
+
+  * New upstream release
+  * Update debian/copyright to revision 135 of format specification for
+    machine readable copyright file in DEP5. Update Maintainers for
+    Test-Class. Update copyright years for debian/* packaging.
+  * Convert to '3.0 (quilt)' package source format.
+
+ -- Salvatore Bonaccorso <salvatore.bonaccorso@gmail.com>  Fri, 30 Apr 2010 22:09:59 +0200
+
+libtest-class-perl (0.34-1) unstable; urgency=low
+
+  [ Jonathan Yu ]
+  * New upstream release
+  * Standards-Version 3.8.4 (no changes)
+  * Add myself to Uploaders and Copyright
+  * Rewrite control description
+  * Update dependencies per upstream
+  * Drop spurious suggested dependencies that are not mentioned
+    anywhere in documentation or package metadata
+
+  [ gregor herrmann ]
+  * debian/control: Changed: (build-)depend on perl instead of perl-
+    modules.
+
+ -- Jonathan Yu <jawnsy@cpan.org>  Sat, 13 Mar 2010 22:42:18 -0500
+
+libtest-class-perl (0.33-1) unstable; urgency=low
+
+  [ gregor herrmann ]
+  * Change my email address.
+
+  [ Salvatore Bonaccorso ]
+  * New upstream release
+  * debian/copyright: Update upstream Copyright years
+  * Drop 536650-fix-ftbfs.patch patch (fixed upstream). Drop README.source
+    since no patch system is used anymore. Adjust the Build-Depends on
+    debhelper accordingly and drop quild Build-Depends. Adjust debian/rules to
+    not use patch system quilt.
+  * Try to run all tests. Use override target in debian/rules and bump
+    Build-Depends on debhelper to required version (>= 7.0.50). Add
+    Build-Depends-Indep for requiered modules.
+  * Bump Standards-Version to 3.8.3 (no changes)
+  * Drop versioned Build-Depends on perl as allowed by Debian Policy 3.8.3.
+
+ -- Salvatore Bonaccorso <salvatore.bonaccorso@gmail.com>  Mon, 21 Sep 2009 19:56:58 +0000
+
+libtest-class-perl (0.31-2) unstable; urgency=low
+
+  [ gregor herrmann ]
+  * debian/control: Changed: Switched Vcs-Browser field to ViewSVN
+    (source stanza).
+  * debian/control: Added: ${misc:Depends} to Depends: field.
+
+  [ Nathan Handler ]
+  * debian/watch: Update to ignore development releases.
+
+  [ Salvatore Bonaccorso ]
+  * debian/control:
+    - Add Build-Depends on quilt (>= 0.46-7) and adjust versioned
+      dependency on debhelper.
+    - Bump Standards-Version to 3.8.2 (no changes)
+    - Add myself to Uploaders.
+  * debian/patches: Add 536650-fix-ftbfs.patch: Fixes FTBFS due
+    failure in tests. Patch picked from upstream bugtracker
+    (Closes: #536650).
+  * debian/rules: Use a tiny rules file.
+  * Add debian/README.source to document quilt usage, as required by
+    Debian Policy since 3.8.0.
+  * Update debian/copyright for debian/* packaging.
+
+  [ gregor herrmann ]
+  * debian/control:
+    - remove build dependency on libmodule-build-perl
+    - make short description a noun phrase
+  * Set Standards-Version to 3.8.2 (no changes).
+
+ -- Salvatore Bonaccorso <salvatore.bonaccorso@gmail.com>  Sat, 08 Aug 2009 11:06:53 +0200
+
+libtest-class-perl (0.31-1) unstable; urgency=low
+
+  [ Ansgar Burchardt ]
+  * New upstream release.
+  * refresh debian/rules for debhelper 7
+  * add myself to Uploaders
+  * update debian/copyright to current revision of the proposed
+    machine-readable format
+  * do not list `Debian Perl Group' as copyright holder in debian/copyright,
+    instead list all contributors (as mentioned in debian/changelog)
+  * bump Standards Version to 3.8.0 (no changes needed)
+
+  [ gregor herrmann ]
+  * debian/control: change my email address.
+  * debian/control: mention module name.
+
+ -- Ansgar Burchardt <ansgar@43-1.org>  Thu, 18 Sep 2008 20:00:09 +0200
+
+libtest-class-perl (0.30-1) unstable; urgency=low
+
+  * New upstream release.
+  * Remove patch pod.diff (included upstreams) and quilt framework.
+  * Bump dependency on libtest-simple-perl to >= 0.78, add
+    libtest-simple-perl to build dependencies again (the new release needs
+    the newer versions from the package, the ones in perl-modules are too
+    old).
+  * Refresh debian/rules, no functional changes.
+  * debian/watch: extended regexp for matching upstream releases.
+  * debian/copyright: add stanza for one third-party file and for debian/*.
+  * Add /me to Uploaders.
+
+ -- gregor herrmann <gregor+debian@comodo.priv.at>  Mon, 07 Apr 2008 19:18:42 +0200
+
+libtest-class-perl (0.28-1) unstable; urgency=low
+
+  [ Rene Mayorga ]
+  * New upstream release
+  * debian/control raise debhelper version to >=6.0
+    + remove libtest-simple-perl from B-D-I (is provided by perl-modules)
+  * debian/compat set to level 6
+  * debian/rules
+    + touch '$@' instead on *-stamps
+
+  [ Damyan Ivanov ]
+  * Add libcontextual-return-perl to B-D-I for more test coverage
+  * add myself to Uploaders
+
+ -- Damyan Ivanov <dmn@debian.org>  Thu, 17 Jan 2008 09:06:16 +0200
+
+libtest-class-perl (0.27-1) unstable; urgency=low
+
+  [ gregor herrmann ]
+  * New upstream release.
+  * debian/copyright: change format, update years
+  * debian/rules:
+    - add dependencies for install and install-stamp targets
+    - remove dh_installman
+    - add tests to build-stamp target
+  * Split out patch on lib/Test/Class/Load.pm and add quilt framework.
+  * debian/control:
+    - wrap long lines
+    - bump dependcy versions as per upstream Makefile.PL
+    - remove unused dependencies
+
+  [ Gunnar Wolf ]
+  * Rephrased long description for clarity
+
+ -- Gunnar Wolf <gwolf@debian.org>  Tue, 08 Jan 2008 09:59:30 -0600
+
+libtest-class-perl (0.26-1) unstable; urgency=low
+
+  [Gregor Herrmann]
+  * debian/control: Added: Vcs-Svn field (source stanza); Vcs-Browser
+    field (source stanza); Homepage field (source stanza).
+  * Set Maintainer to Debian Perl Group.
+  * Use dist-based URL in debian/watch.
+
+  [Gunnar Wolf]
+  * New upstream release
+  * Added myself as an uploader
+  * Updated dh compat level to 5
+  * Bumped up standards-version to 3.7.3
+  * Build-depended on dpatch, but was not used - Off it goes!
+  * Reorganized debian/rules to be more in line with our group\'s common
+    practices
+  * Moved libmodule-build-perl from b-d-i to b-d as it is required for
+    clean
+
+ -- Gunnar Wolf <gwolf@debian.org>  Tue, 18 Dec 2007 21:13:28 -0600
+
+libtest-class-perl (0.24-1) unstable; urgency=low
+
+  * New upstream release
+  * Ack'd NMU, patch now included upstream. Thanks Marc. (Closes: #358745)
+  * Bumped policy version to 3.7.2.2. No other changes
+  * Changed rules to conditionally ignore make clean errors for lintian
+  * Added a single whitespace line to fix bad manpage whatis lintian warning
+
+ -- Jay Bonci <jaybonci@debian.org>  Wed, 04 Jul 2007 19:47:51 -0400
+
+libtest-class-perl (0.11-1.1) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * Fix testsuite issues happening with newer versions of Test::More. Thanks
+    to Martin Ferrari <martin.ferrari@gmail.com> for the patch. (Closes:
+    #358745).
+  * debian/control:
+     + Replace dependency on libtest-builder-tester-perl, as that module
+       is now provided by libtest-simple-perl.
+     + move debhelper/dpatch to B-Depends. (Shuts up lintian)
+
+ -- Marc 'HE' Brockschmidt <he@debian.org>  Mon, 24 Apr 2006 10:08:11 +0200
+
+libtest-class-perl (0.11-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Jay Bonci <jaybonci@debian.org>  Fri,  4 Mar 2005 13:37:57 -0500
+
+libtest-class-perl (0.10-2) unstable; urgency=low
+
+  * Adds libdevel-symdump-perl as build-dep (Closes: #294951)
+  * Adds libio-string-perl as build-dep
+
+ -- Jay Bonci <jaybonci@debian.org>  Sun, 13 Feb 2005 18:31:52 -0500
+
+libtest-class-perl (0.10-1) unstable; urgency=low
+
+  * New upstream version
+
+ -- Jay Bonci <jaybonci@debian.org>  Tue,  8 Feb 2005 11:41:33 -0500
+
+libtest-class-perl (0.07-1) unstable; urgency=low
+
+  * New upstream version
+  * Removes documentation, as it's no longer included with this release
+  * Updates short description to squash lintian warning
+
+ -- Jay Bonci <jaybonci@debian.org>  Wed,  5 Jan 2005 16:06:23 -0500
+
+libtest-class-perl (0.03-3) unstable; urgency=low
+
+  * Adds debian/watch file so uscan will actually work
+
+ -- Jay Bonci <jaybonci@debian.org>  Mon, 11 Oct 2004 01:39:41 -0400
+
+libtest-class-perl (0.03-2) unstable; urgency=low
+
+  * Fixes problem in POD formatting that causes tests to fail (Closes: #215054)
+
+ -- Jay Bonci <jaybonci@debian.org>  Wed, 22 Oct 2003 02:34:44 -0400
+
+libtest-class-perl (0.03-1) unstable; urgency=low
+
+  * Initial Release (Closes: #178093)
+
+ -- Jay Bonci <jaybonci@debian.org>  Sun, 21 Sep 2003 04:00:53 -0400

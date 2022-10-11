@@ -1,0 +1,36 @@
+Source: libtest-class-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Damyan Ivanov <dmn@debian.org>,
+           gregor herrmann <gregoa@debian.org>,
+           Ansgar Burchardt <ansgar@debian.org>,
+           Salvatore Bonaccorso <carnil@debian.org>
+Section: perl
+Testsuite: autopkgtest-pkg-perl
+Priority: optional
+Build-Depends: debhelper-compat (= 13)
+Build-Depends-Indep: libcontextual-return-perl <!nocheck>,
+                     libdevel-symdump-perl <!nocheck>,
+                     libmodule-runtime-perl <!nocheck>,
+                     libmro-compat-perl <!nocheck>,
+                     libtest-exception-perl <!nocheck>,
+                     libtry-tiny-perl <!nocheck>,
+                     perl
+Standards-Version: 4.5.1
+Vcs-Browser: https://salsa.debian.org/perl-team/modules/packages/libtest-class-perl
+Vcs-Git: https://salsa.debian.org/perl-team/modules/packages/libtest-class-perl.git
+Homepage: https://metacpan.org/release/Test-Class
+Rules-Requires-Root: no
+
+Package: libtest-class-perl
+Architecture: all
+Depends: ${misc:Depends},
+         ${perl:Depends},
+         libcontextual-return-perl,
+         libmodule-runtime-perl,
+         libmro-compat-perl,
+         libtest-exception-perl,
+         libtry-tiny-perl
+Description: module for creating test classes in an xUnit style
+ Test::Class is a Perl test harness for creating tests using the xUnit style
+ inspired by Smalltalk. It is aimed at authors of Perl modules already using
+ Test::Builder-based modules.
